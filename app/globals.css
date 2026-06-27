@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === Firemné CSS premenné === */
+:root {
+  --az-teal:  #1E4B5D;
+  --az-gold:  #DF9A10;
+  --az-green: #46584C;
+  --az-black: #0C0B09;
+  --az-cream: #F0EDE8;
+}
+
+/* === Plynulý scroll medzi sekciami === */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0C0B09;
+  color: #F0EDE8;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* === Skryje scrollbar v karuseli, ale zachová funkciu === */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* === Carousel – snap scrolling === */
+.carousel-snap {
+  scroll-snap-type: x mandatory;
+}
+.carousel-snap > * {
+  scroll-snap-align: start;
+}
+
+/* === Jemný golden glow pre hover stavy === */
+.gold-glow:hover {
+  box-shadow: 0 0 0 1px rgba(223, 154, 16, 0.3), 0 8px 32px rgba(223, 154, 16, 0.08);
+}
