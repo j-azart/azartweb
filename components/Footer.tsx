@@ -10,6 +10,17 @@ export default function Footer() {
         {/* Logo vycentrované */}
         <Logo />
 
+        {/* Údaje o spoločnosti */}
+        <div className="text-xs text-az-muted text-center leading-relaxed space-y-1">
+          <p className="font-medium text-az-cream">AZART production s.r.o.</p>
+          <p>Sídlo: Lieskovská cesta 2298/4, 960 01 Zvolen</p>
+          <p>IČO: 55557139 · DIČ: 2122020956 · IČ DPH: SK2122020956</p>
+          <p>
+            Spoločnosť s ručením obmedzeným zapísaná v Obchodnom registri
+            Okresného súdu Banská Bystrica, oddiel: Sro, vložka č. 46715/S
+          </p>
+        </div>
+
         {/* Copyright */}
         <p className="text-xs text-az-muted">
           © {year} AZART Production. Všetky práva vyhradené.
